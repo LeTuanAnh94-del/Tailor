@@ -41,11 +41,9 @@ export default function useLoginLogic() {
         phoneNumber: errorMessage,
         password: errorMessage,
       });
-    } finally {
-      setIsLoading(false);
-    }
+    } 
 
-    const token = res.data.accessToken;
+    const token = res?.data?.accessToken;
 
     localStorage.setItem("token", token);
 
@@ -62,6 +60,8 @@ export default function useLoginLogic() {
         ShowToast("Congratulation", "success");
       } catch (error) {
         console.log(" error:", error);
+      } finally {
+        setIsLoading(false);
       }
     }
   };

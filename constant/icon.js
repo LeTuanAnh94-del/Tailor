@@ -31,10 +31,9 @@ export const IconMenu = () => {
 
 export const IconLoading = () => {
   return (
-    <div role="status" className="absolute mt-[-28px] ml-14">
       <svg
         aria-hidden="true"
-        className="w-5 h-8 text-gray-200 animate-spin fill-primary"
+        className="w-5 h-8 text-gray-200 animate-spin fill-primary absolute mt-[-28px] ml-14"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +47,5 @@ export const IconLoading = () => {
           fill="currentFill"
         />
       </svg>
-    </div>
   );
 };

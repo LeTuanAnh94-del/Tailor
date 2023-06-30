@@ -19,10 +19,7 @@ export default function Login() {
             <h1 className="text-xl text-center leading-tight tracking-tight text-header md:text-2xl uppercase">
               Sign in to your account
             </h1>
-            <form
-              className="space-y-8"
-              onSubmit={formik.handleSubmit}
-            >
+            <form className="space-y-8" onSubmit={formik.handleSubmit}>
               <div>
                 <label className="block mb-2 text-sm font-medium not-italic text-text">
                   Phone Number
@@ -68,7 +65,7 @@ export default function Login() {
                 </ButtonBase>
               </div>
             </form>
-          </div>  
+          </div>
         </div>
       </div>
     </section>
