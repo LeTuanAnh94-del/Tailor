@@ -5,9 +5,11 @@ import BaseInput from "@/components/baseInput";
 import ButtonBase from "@/components/buttonBase/ButtonBase";
 import { IconLoading } from "@/constant/icon";
 import useLoginLogic from "@/hooks/useLoginLogic";
+import { inputType } from "@/components/baseInput/BaseInput";
 
 export default function Login() {
   const { isLoading, formik } = useLoginLogic();
+
   return (
     <section className="bg-red-950 ">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto h-[100vh]">
@@ -32,6 +34,7 @@ export default function Login() {
                   placeholder="Your Phone Number"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
+                  types={inputType.form}
                 />
                 {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
                   <p className="absolute text-xs text-red-500 mt-2">
@@ -51,6 +54,7 @@ export default function Login() {
                   placeholder="Your Password"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
+                  types={inputType.form}
                 />
                 {formik.touched.password && formik.errors.password ? (
                   <p className="absolute text-xs text-red-500 mt-2">
