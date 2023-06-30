@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import { loginApi } from "@/apis/auth.api";
+import { getInfoUser, loginApi } from "@/apis/auth.api";
 import { ShowToast } from "@/utils/ShowToast";
 
 export default function useLoginLogic() {
@@ -28,18 +28,12 @@ export default function useLoginLogic() {
   });
 
   const handleLogin = async (phoneNumber, password) => {
+    let res = null;
+
     setIsLoading(true);
 
     try {
-      const res = await loginApi(phoneNumber, password);
-
-      const token = res?.data?.accessToken;
-
-      localStorage.setItem("token", token);
-
-      ShowToast("Đăng nhập thành công", "success");
-
-      router.push("/");
+      res = await loginApi(phoneNumber, password);
     } catch (error) {
       const errorMessage = "Invalid phone number or password";
 
@@ -49,6 +43,26 @@ export default function useLoginLogic() {
       });
     } finally {
       setIsLoading(false);
+    }
+
+    const token = res.data.accessToken;
+
+    localStorage.setItem("token", token);
+
+    let activeToken = localStorage.getItem("token");
+
+    if (activeToken) {
+      try {
+        const resData = await getInfoUser(activeToken);
+
+        resData.data.role === "TAILOR"
+          ? router.push("/tailor")
+          : router.push("/user");
+
+        ShowToast("Congratulation", "success");
+      } catch (error) {
+        console.log(" error:", error);
+      }
     }
   };
 

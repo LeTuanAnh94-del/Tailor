@@ -9,7 +9,7 @@ import useLoginLogic from "@/hooks/useLoginLogic";
 export default function Login() {
   const { isLoading, formik } = useLoginLogic();
   return (
-    <section className="bg-[#f9f8f8] ">
+    <section className="bg-red-950 ">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto h-[100vh]">
         <div className="w-full bg-white shadow md:mt-0 sm:max-w-md xl:p-0">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -20,7 +20,7 @@ export default function Login() {
               Sign in to your account
             </h1>
             <form
-              className="space-y-10 md:space-y-6"
+              className="space-y-8"
               onSubmit={formik.handleSubmit}
             >
               <div>
@@ -37,7 +37,7 @@ export default function Login() {
                   onBlur={formik.handleBlur}
                 />
                 {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-                  <p className="absolute text-xs text-red-500 mt-1">
+                  <p className="absolute text-xs text-red-500 mt-2">
                     {formik.errors.phoneNumber}
                   </p>
                 ) : null}
@@ -56,7 +56,7 @@ export default function Login() {
                   onBlur={formik.handleBlur}
                 />
                 {formik.touched.password && formik.errors.password ? (
-                  <p className="absolute text-xs text-red-500 mt-1">
+                  <p className="absolute text-xs text-red-500 mt-2">
                     {formik.errors.password}
                   </p>
                 ) : null}

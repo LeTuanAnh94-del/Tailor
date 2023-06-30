@@ -8,6 +8,11 @@ export const butlerMedium = localFont({
   display: "swap",
 });
 
+export const butlerRegular = localFont({
+  src: "../public/Fonts/Butler_Regular.otf",
+  display: "swap",
+});
+
 export default function App({
   Component,
   pageProps: { session, ...pageProps },
@@ -23,9 +28,13 @@ export default function App({
           input {
             font-family: normal;
           }
+          
+          button {
+            font-family: ${butlerRegular.style.fontFamily};
+          }
         `}
       </style>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
       <ToastContainer />
     </div>
   );
