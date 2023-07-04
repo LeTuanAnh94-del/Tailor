@@ -9,7 +9,7 @@ export default function Menu({ changeLang, handleLogout, selectedLang }) {
       <ul className="w-[96%] mr-3 z-10 absolute font-medium flex flex-col p-4 mt-4 border rounded-lg bg-red-950 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
         <li>
           <Link
-            href="#"
+            href={"/tailor"}
             className="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary_hover"
             aria-current="page"
           >
@@ -18,7 +18,16 @@ export default function Menu({ changeLang, handleLogout, selectedLang }) {
         </li>
         <li>
           <Link
-            href="#"
+            href={"/create-order"}
+            className="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary_hover"
+            aria-current="page"
+          >
+            {t("create-order")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={"/list"}
             className="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary_hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
           >
             {t("list-order")}

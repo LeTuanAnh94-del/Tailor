@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import BaseInput, { inputType } from "@/components/baseInput/BaseInput";
 import ButtonBase from "@/components/buttonBase/ButtonBase";
 import { FormOderTrouser, FormOrderShirt } from "@/components/formOder";
 import Header from "@/components/header/Header";
-import { SelectType } from "@/components/select/Select";
 
 export default function Tailor() {
   const { t } = useTranslation();

@@ -70,6 +70,14 @@ export default function Header() {
             </li>
             <li>
               <Link
+                href={"/create-order"}
+                className="block py-2 pl-3 pr-4 text-primary rounded  md:hover:bg-transparent md:border-0 md:hover:text-primary_hover md:p-0"
+              >
+                {t("create-order")}
+              </Link>
+            </li>
+            <li>
+              <Link
                 href={"/list"}
                 className="block py-2 pl-3 pr-4 text-primary rounded  md:hover:bg-transparent md:border-0 md:hover:text-primary_hover md:p-0"
               >

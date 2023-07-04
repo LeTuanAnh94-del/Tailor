@@ -30,5 +30,10 @@
   "bottom": "Bottom",
   "knee": "Knee",
   "long-trouser": "Long Trouser",
-  "calf-leg": "Calf Leg"
+  "calf-leg": "Calf Leg",
+  "create-order": "Create Order",
+  "quantity": "Quantity",
+  "deadline": "Deadline",
+  "note": "Note",
+  "type": "Type"
 }

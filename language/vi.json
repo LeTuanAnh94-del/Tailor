@@ -30,5 +30,10 @@
   "bottom": "Đáy",
   "knee": "Gối",
   "long-trouser": "Dài Quần",
-  "calf-leg": "Bắp Chân"
+  "calf-leg": "Bắp Chân",
+  "create-order": "Tạo Đơn",
+  "quantity": "Số Lượng",
+  "deadline": "Hạn Trả",
+  "note": "Ghi Chú",
+  "type": "Loại"
 }

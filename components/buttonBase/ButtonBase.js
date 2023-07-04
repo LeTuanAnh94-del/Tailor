@@ -1,6 +1,13 @@
-export default function ButtonBase({ children, disabled, onClick, className }) {
+export default function ButtonBase({
+  type,
+  children,
+  disabled,
+  onClick,
+  className,
+}) {
   return (
     <button
+      type={type}
       onClick={onClick}
       disabled={disabled}
       className={`uppercase font-medium text-sm relative px-14 py-3.5 overflow-hidden group bg-primary hover:bg-gradient-to-r hove:bg-primary_hover text-white transition-all ease-out duration-300 ${className}`}
