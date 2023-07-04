@@ -8,7 +8,7 @@ import useLoginLogic from "@/hooks/useLoginLogic";
 import { inputType } from "@/components/baseInput/BaseInput";
 
 export default function Login() {
-  const { isLoading, formik } = useLoginLogic();
+  const { isLoading, formik} = useLoginLogic();
 
   return (
     <section className="bg-red-950 ">

@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 import BaseInput, { inputType } from "../baseInput/BaseInput";
 
 export const FormOrderShirt = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="px-10">
+    <div className="px-5 mt-4">
       <div className="grid md:grid-cols-3 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
           <BaseInput
@@ -10,9 +14,8 @@ export const FormOrderShirt = () => {
             name="shoulder"
             id="shoulder"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Shoulder"
+            label={`${t("shoulder")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -21,9 +24,8 @@ export const FormOrderShirt = () => {
             name="longShirt"
             id="longShirt"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Long Shirt"
+            label={`${t("long-shirt")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -32,9 +34,8 @@ export const FormOrderShirt = () => {
             name="calfArm"
             id="calfArm"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Calf Arm"
+            label={`${t("calf-arm")}`}
           />
         </div>
       </div>
@@ -45,9 +46,8 @@ export const FormOrderShirt = () => {
             name="neck"
             id="neck"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Neck"
+            label={`${t("neck")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -56,9 +56,8 @@ export const FormOrderShirt = () => {
             name="gile"
             id="gile"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Gile"
+            label={`${t("gile")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -67,9 +66,8 @@ export const FormOrderShirt = () => {
             name="chestType"
             id="chestType"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Chest Type"
+            label={`${t("chest-type")}`}
           />
         </div>
       </div>
@@ -80,9 +78,8 @@ export const FormOrderShirt = () => {
             name="downShoulder"
             id="downShoulder"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Down Shoulder"
+            label={`${t("down-shoulder")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -91,9 +88,8 @@ export const FormOrderShirt = () => {
             name="longArm"
             id="longArm"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Long Arm"
+            label={`${t("long-arm")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -102,9 +98,8 @@ export const FormOrderShirt = () => {
             name="withinArmpit"
             id="withinArmpit"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Within Armpit"
+            label={`${t("within-armpit")}`}
           />
         </div>
       </div>
@@ -115,9 +110,8 @@ export const FormOrderShirt = () => {
             name="chest"
             id="chest"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Chest"
+            label={`${t("chest")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -126,9 +120,8 @@ export const FormOrderShirt = () => {
             name="butt"
             id="butt"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Butt"
+            label={`${t("butt")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -137,9 +130,8 @@ export const FormOrderShirt = () => {
             name="handDoor"
             id="handDoor"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Hand Door"
+            label={`${t("hand-door")}`}
           />
         </div>
       </div>
@@ -150,9 +142,8 @@ export const FormOrderShirt = () => {
             name="lowerWaist"
             id="lowerWaist"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Lower Waist"
+            label={`${t("lower-waist")}`}
           />
         </div>
       </div>
@@ -161,8 +152,10 @@ export const FormOrderShirt = () => {
 };
 
 export const FormOderTrouser = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="px-10">
+    <div className="px-5 mt-4">
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
           <BaseInput
@@ -170,9 +163,8 @@ export const FormOderTrouser = () => {
             name="belly"
             id="belly"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Belly"
+            label={`${t("belly")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -181,9 +173,8 @@ export const FormOderTrouser = () => {
             name="femoral"
             id="femoral"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Femoral"
+            label={`${t("femoral")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -192,9 +183,8 @@ export const FormOderTrouser = () => {
             name="pipe"
             id="pipe"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Pipe"
+            label={`${t("pipe")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -203,9 +193,8 @@ export const FormOderTrouser = () => {
             name="bottom"
             id="bottom"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Bottom"
+            label={`${t("bottom")}`}
           />
         </div>
       </div>
@@ -216,9 +205,8 @@ export const FormOderTrouser = () => {
             name="butt"
             id="butt"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Butt"
+            label={`${t("butt")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -227,9 +215,8 @@ export const FormOderTrouser = () => {
             name="knee"
             id="knee"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Knee"
+            label={`${t("knee")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -238,9 +225,8 @@ export const FormOderTrouser = () => {
             name="longTrouser"
             id="longTrouser"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Long Trouser"
+            label={`${t("long-trouser")}`}
           />
         </div>
         <div className="relative z-0 w-full mb-6 group">
@@ -249,9 +235,8 @@ export const FormOderTrouser = () => {
             name="calfLeg"
             id="calfLeg"
             placeholder=" "
-            required
             types={inputType.order}
-            label="Calf Leg"
+            label={`${t("calf-leg")}`}
           />
         </div>
       </div>

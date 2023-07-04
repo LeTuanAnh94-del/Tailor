@@ -1,7 +1,10 @@
 import "@/styles/globals.css";
-import localFont from "next/font/local";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import localFont from "next/font/local";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import { ToastContainer } from "react-toastify";
+import "./i18n";
 
 export const butlerMedium = localFont({
   src: "../public/Fonts/Butler-Medium.woff2",
@@ -17,6 +20,16 @@ export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      router.push("/");
+    }
+  }, [router]);
+
   return (
     <div>
       <style jsx global>
@@ -28,7 +41,7 @@ export default function App({
           input {
             font-family: normal;
           }
-          
+
           button {
             font-family: ${butlerRegular.style.fontFamily};
           }
