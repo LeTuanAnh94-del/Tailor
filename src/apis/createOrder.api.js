@@ -1,4 +1,4 @@
-import { FULL_BASE_URL_ORDER } from "@/constant/server";
+import { FULL_BASE_URL_ORDER } from "@/src/constant/server";
 import axios from "axios";
 
 const headers = {

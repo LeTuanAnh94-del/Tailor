@@ -5,9 +5,12 @@ import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
-import Logo from "@/public/images/LogoTailor.png";
-import { IconMenu } from "@/constant/icon";
+// import Logo from "@/public/images/";
+import Logo from "../../public/images/LogoTailor.png";
+import { IconMenu } from "@/src/constant/icon";
 import Menu from "./Menu/Menu";
+// import { IconMenu } from "@/constant/icon";
+// import Menu from "./Menu/Menu";
 
 export default function Header() {
   const router = useRouter();

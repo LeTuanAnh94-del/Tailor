@@ -3,8 +3,8 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import { getInfoUser, loginApi } from "@/apis/auth.api";
-import { ShowToast } from "@/utils/ShowToast";
+import { getInfoUser, loginApi } from "../apis/auth.api";
+import { ShowToast } from "../utils/ShowToast";
 
 export default function useLoginLogic() {
   const router = useRouter();

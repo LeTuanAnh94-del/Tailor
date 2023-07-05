@@ -1,4 +1,4 @@
-import { FULL_BASE_URL, FULL_BASE_URL_INFO } from "@/constant/server";
+import { FULL_BASE_URL, FULL_BASE_URL_INFO } from "@/src/constant/server";
 import axios from "axios";
 
 const headers = {

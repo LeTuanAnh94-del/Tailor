@@ -1,11 +1,16 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { createOrder } from "@/src/apis/createOrder.api";
+import Header from "@/src/components/header/Header";
+import BaseInput, { inputType } from "@/src/components/baseInput/BaseInput";
+import { FormOderTrouser, FormOrderShirt } from "@/src/components/formOder";
+import ButtonBase from "@/src/components/buttonBase/ButtonBase";
 
-import BaseInput, { inputType } from "@/components/baseInput/BaseInput";
-import ButtonBase from "@/components/buttonBase/ButtonBase";
-import Header from "@/components/header/Header";
-import { createOrder } from "@/apis/createOrder.api";
-import { FormOderTrouser, FormOrderShirt } from "@/components/formOder";
+// import BaseInput, { inputType } from "@/components/baseInput/BaseInput";
+// import ButtonBase from "@/components/buttonBase/ButtonBase";
+// import Header from "@/components/header/Header";
+// import { createOrder } from "@/apis/createOrder.api";
+// import { FormOderTrouser, FormOrderShirt } from "@/components/formOder";
 
 export default function CreateOrder() {
   const { t } = useTranslation();

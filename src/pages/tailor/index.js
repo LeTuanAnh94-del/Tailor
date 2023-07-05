@@ -1,9 +1,13 @@
+import BaseInput, { inputType } from "@/src/components/baseInput/BaseInput";
+import ButtonBase from "@/src/components/buttonBase/ButtonBase";
+import { FormOderTrouser, FormOrderShirt } from "@/src/components/formOder";
+import Header from "@/src/components/header/Header";
 import { useTranslation } from "react-i18next";
 
-import BaseInput, { inputType } from "@/components/baseInput/BaseInput";
-import ButtonBase from "@/components/buttonBase/ButtonBase";
-import { FormOderTrouser, FormOrderShirt } from "@/components/formOder";
-import Header from "@/components/header/Header";
+// import BaseInput, { inputType } from "@/components/baseInput/BaseInput";
+// import ButtonBase from "@/components/buttonBase/ButtonBase";
+// import { FormOderTrouser, FormOrderShirt } from "@/components/formOder";
+// import Header from "@/components/header/Header";
 
 export default function Tailor() {
   const { t } = useTranslation();

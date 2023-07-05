@@ -1,13 +1,14 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
 import localFont from "next/font/local";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
-import "./i18n";
+
+import "../utils/i18n";
 
 export const butlerMedium = localFont({
-  src: "../public/Fonts/Butler-Medium.woff2",
+  src: "../public/Fonts/Butler_Regular.otf",
   display: "swap",
 });
 

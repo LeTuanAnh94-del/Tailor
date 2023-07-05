@@ -1,14 +1,18 @@
 import Image from "next/image";
 
-import Logo from "@/public/images/LogoTailor.png";
-import BaseInput from "@/components/baseInput";
-import ButtonBase from "@/components/buttonBase/ButtonBase";
-import { IconLoading } from "@/constant/icon";
-import useLoginLogic from "@/hooks/useLoginLogic";
-import { inputType } from "@/components/baseInput/BaseInput";
+import Logo from "../../public/images/LogoTailor.png";
+import BaseInput, { inputType } from "@/src/components/baseInput/BaseInput";
+import ButtonBase from "@/src/components/buttonBase/ButtonBase";
+import { IconLoading } from "@/src/constant/icon";
+import useLoginLogic from "@/src/hooks/useLoginLogic";
+// import BaseInput from "@/components/baseInput";
+// import ButtonBase from "@/components/buttonBase/ButtonBase";
+// import { IconLoading } from "@/src/constant/icon";
+// import useLoginLogic from "@/src/hooks/useLoginLogic";
+// import { inputType } from "@/components/baseInput/BaseInput";
 
 export default function Login() {
-  const { isLoading, formik} = useLoginLogic();
+  const { isLoading, formik } = useLoginLogic();
 
   return (
     <section className="bg-red-950 ">
